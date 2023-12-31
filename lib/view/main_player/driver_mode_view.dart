@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_null_comparison
+
 import 'dart:math';
 
 import 'package:audio_service/audio_service.dart';
@@ -163,6 +165,7 @@ class _DriverModeViewState extends State<DriverModeView> {
                         final value = min(
                             valueState.current.inMilliseconds.toDouble(),
                             valueState.total.inMilliseconds.toDouble());
+                        // ignore: dead_code
                         if (dragValue != null && dragging) {
                           dragValue = null;
                         }

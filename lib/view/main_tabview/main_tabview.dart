@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:music_player_app/common/color_extensions.dart';
-import 'package:music_player_app/common_widget/coming_soon.dart';
-import 'package:music_player_app/common_widget/icon_text_row.dart';
+ import 'package:music_player_app/common_widget/icon_text_row.dart';
 import 'package:music_player_app/common_widget/mini_player_view.dart';
 import 'package:music_player_app/view/home/home_view.dart';
 import 'package:music_player_app/view/settings/settings_view.dart';
@@ -34,8 +33,7 @@ class _MainTabViewState extends State<MainTabView>
 
   @override
   void dispose() {
-    // TODO: implement dispose
-    super.dispose();
+     super.dispose();
     controller?.dispose();
   }
 

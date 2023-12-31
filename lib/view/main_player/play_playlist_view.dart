@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable, unnecessary_null_comparison
+
 import 'dart:math';
 
 import 'package:audio_service/audio_service.dart';
@@ -12,8 +14,7 @@ import 'package:music_player_app/view/main_player/driver_mode_view.dart';
 import 'package:sleek_circular_slider/sleek_circular_slider.dart';
 
 import '../../common/color_extensions.dart';
-import '../../common_widget/all_song_row.dart';
-
+ 
 class PlayPlayListView extends StatefulWidget {
   const PlayPlayListView({super.key});
 
@@ -73,7 +74,7 @@ class _PlayPlayListViewState extends State<PlayPlayListView> {
                 height: 20,
                 color: Colors.white,
               ),
-                    onSelected: (selectIndex) {
+              onSelected: (selectIndex) {
                 if (selectIndex == 2) {
                   openPlayPlaylistQueue();
                 } else if (selectIndex == 1) {
@@ -280,6 +281,7 @@ class _PlayPlayListViewState extends State<PlayPlayListView> {
                               final value = min(
                                   valueState.current.inMilliseconds.toDouble(),
                                   valueState.total.inMilliseconds.toDouble());
+                              // ignore: dead_code
                               if (dragValue != null && dragging) {
                                 dragValue = null;
                               }
@@ -481,6 +483,7 @@ class _PlayPlayListViewState extends State<PlayPlayListView> {
 
                               return Dismissible(
                                 key: ValueKey(sObj.id),
+                                // ignore: unrelated_type_equality_checks
                                 direction: index == queue
                                     ? DismissDirection.none
                                     : DismissDirection.horizontal,
@@ -527,7 +530,7 @@ class _PlayPlayListViewState extends State<PlayPlayListView> {
       ),
     );
   }
-  
+
   void openPlayPlaylistQueue() {
     Navigator.push(
       context,
