@@ -9,7 +9,7 @@ Splash Screen : Engaging launch experience for users.
 Bottom TabView Navigation : User-friendly navigation for smooth app exploration.
 
 Home Screen : Feature-rich display of recently played songs and playlists.
-
+ 
 Side Menu : Intuitive access to various app sections.
 
 Songs, Albums, Playlist : Organized and user-friendly presentation of music.
