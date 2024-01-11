@@ -8,11 +8,12 @@ class AlbumCell extends StatelessWidget {
 
   const AlbumCell({
     super.key,
+    
     required this.aObj,
     required this.onPressed,
     required this.onPressedMenu,
   });
-
+    
   @override
   Widget build(BuildContext context) {
     return InkWell(

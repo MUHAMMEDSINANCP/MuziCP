@@ -227,7 +227,7 @@ class _MainTabViewState extends State<MainTabView>
                   height: 20,
                 ),
               ),
-            ],
+            ], 
           ),
         ),
       ),
