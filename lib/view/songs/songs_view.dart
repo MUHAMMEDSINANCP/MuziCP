@@ -76,7 +76,7 @@ class _SongsViewState extends State<SongsView>
             height: kToolbarHeight - 15,
             child: TabBar(
               controller: controller,
-              indicatorPadding: const EdgeInsets.symmetric(horizontal: 20),
+              indicatorPadding: const EdgeInsets.symmetric(horizontal: 10),
               isScrollable: true,
               labelColor: TColor.focus,
               unselectedLabelColor: TColor.primaryText80,
